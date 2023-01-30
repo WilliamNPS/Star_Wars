@@ -1,0 +1,233 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+.fundo{
+    display: table;
+    width: 100%;
+    height: 100vh;
+
+    color: white;
+    background: url('img/fundo.jpg') no-repeat bottom center scroll;
+
+    background-size: cover;
+
+
+}
+
+
+
+
+h1{
+    font-size: 42px;
+    text-align: center;
+}
+
+/*botoes*/
+main{
+
+    max-width: 190px;
+    margin: auto;
+
+   
+}
+#buttons-container button{
+border: none;
+padding: 10px 15px;
+margin: 0 10px;
+margin-bottom: 40px;
+
+}
+
+button:hover{
+    background-color: red;
+}
+
+/*jogo*/
+
+
+#block-1, #block-4 ,#block-7{
+    box-shadow: 10px 10px 30px orange;
+}
+
+#block-3, #block-6 ,#block-9{
+    box-shadow: 10px 10px 30px #2438b4;
+}
+#block-2, #block-4 ,#block-8{
+    box-shadow: 10px 10px 30px black;
+}
+#container{
+    display: flex;
+    width: 300px;
+    margin: 0px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box{
+    height: 100px;
+    border: 5px solid white;
+
+ 
+    box-sizing: border-box;
+    flex: 1 1 33%;
+}
+
+  
+
+#block-1,#block-2,#block-3{
+    border-top: none;
+}
+
+#block-1,#block-4,#block-7{
+    border-left: none;
+}
+
+#block-8,#block-9,#block-7{
+    border-bottom: none;
+}
+
+#block-3,#block-6,#block-9{
+    border-right: none;
+}
+
+/*simbolos*/
+.x{
+    font-size: 65px;
+    color: red;
+    display: inline-block;
+    line-height:100px ;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+}
+
+.o{
+   
+  
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 17px;
+}
+img{
+    border-radius: 50px;
+}
+h2{
+    text-align: center;
+}
+
+
+.hide{
+    display: none;
+}
+
+/*placar*/
+
+#scoreboard-container{
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 25px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+#x-scoreboard{
+    color: red;
+    margin-right: 3px;
+    font-size: 40px;
+}
+
+#o-scoreboard{
+
+    font-size: 45px;
+   font-weight: 100;
+    color: orange;
+    border-radius: 50%;
+    margin-right: 3px;
+}
+
+/*msg de vitoria*/
+
+#message{
+    position: absolute;
+    margin-left: auto;
+    margin-right:auto ;
+    left: 0;
+    right: 0;
+    top: 150px;
+    max-width: 500px;
+
+    background-color: black;
+    border-top: 4px solid orange;
+    border-left: 4px solid orange;
+    border-bottom: 4px solid #2438b4;
+    border-right: 4px solid #2438b4;
+    box-shadow:3px 3px 30px #3BF1F4;
+    text-align: center;
+    padding: 10px;
+
+}
+
+@media screen and (max-width: 576px){
+    .fundo{
+        display: table;
+        width: 100%;
+        height: 100vh;
+    
+        color: white;
+        background: url('img/fundo.jpg') no-repeat bottom center scroll;
+    
+        background-size: cover;
+    
+    
+    }
+    #message{
+        position: absolute;
+        margin-left: auto;
+        margin-right:auto ;
+        left: 0;
+        right: 0;
+       
+        top: 150px;
+      width: 300px;
+        background-color: black;
+        border-top: 4px solid orange;
+        border-left: 4px solid orange;
+        border-bottom: 4px solid #2438b4;
+        border-right: 4px solid #2438b4;
+        box-shadow:3px 3px 30px #3BF1F4;
+        text-align: center;
+        padding: 10px;
+    
+    }
+
+    p{
+        font-size: 11px;
+    }
+}
+
+.box{
+    text-align: center;
+ 
+}
+audio{
+   display: none;
+}
+source{
+    width: 100px;
+}
+
+p{
+    font-size: 30px;
+    color: #3BF1F4;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo da Velha</title>
+</head>
+<body  >
+
+<div class="fundo">
+
+<div>
+<audio src="">
+    <source src="audio/audio.mp4"  type="">
+</audio>
+
+    <main id="buttons-container">
+        <img src="img/Star-Wars-Logo.png" width="200px" alt="">
+
+
+    </main>
+        
+        <section id="container" class="hide">
+            
+        <div class="box" id="block-1"></div>
+        <div class="box" id="block-2"></div>
+        <div class="box" id="block-3"></div>
+        <div class="box" id="block-4"></div>
+        <div class="box" id="block-5"></div>
+        <div class="box" id="block-6"></div>
+        <div class="box" id="block-7"></div>
+        <div class="box" id="block-8"></div>
+        <div class="box" id="block-9"></div>
+        
+        <article id="scoreboard-container"> 
+          <h2>Placar</h2>
+            <span class="score-box">
+              
+                <span id="o-scoreboard"><img src="img/preto.png" width="35px" alt=""></span>
+                <span id="scoreboard-1">0</span>
+            </span>
+            
+            <span class="score-box">
+                <span id="x-scoreboard"> <img src="img/marron.jpg" width="32px" alt=""></span>
+                <span id="scoreboard-2">0</span>
+            </span>
+            
+
+            <div class="hide">
+                <div class="x"><img src="img/preto.png" width="60px" alt=""></div>
+                <div class="o"><img src="img/marron.jpg" width="60px" alt=""></div>
+             </div>
+            </article>
+          
+        </section>
+        
+      
+        
+        <div class="hide" id="message">
+        <p> Empate! <br>
+        O proximo embate será épico!
+        </p>
+
+        </div>
+
+
+
+</div>
+
+
+  <audio  controls  autoplay loop="loop" id='playaudio'>
+    <source  src="audio.mp4" type="audio/mpeg">
+</audio>
+
+
+
+
+
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
